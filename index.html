@@ -68,13 +68,14 @@
     ============================================================ -->
     <section class="hero">
       <div class="container">
-   
+        <p class="hero__label">Martin Botto. Phoenix, Arizona.</p>
+
         <h1 class="hero__headline">
           Business analyst turning operational and financial data into <em>decisions.</em>
         </h1>
 
         <p class="hero__sub">
-          Bilingual MS Business Analytics student at Grand Canyon University, with an undergraduate foundation in finance. I work across operations dashboards, KPI tracking, financial modeling, and BI reporting.
+          Bilingual MS Business Analytics candidate at Grand Canyon University, with an undergraduate foundation in finance. I work across operations dashboards, KPI tracking, financial modeling, and BI reporting.
         </p>
 
         <div class="hero__cta">
@@ -82,7 +83,7 @@
             Contact
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a class="btn btn--ghost" href="Resume_Martin_Botto.pdf" download>
+          <a class="btn btn--ghost" href="assets/Martin_Botto_Resume.pdf" download>
             Download resume
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           </a>
@@ -102,7 +103,9 @@
         <div class="prose">
           <p>I studied Business Administration and Finance at Universidad San Francisco de Quito in Ecuador, where I learned to read statements, build models, and think carefully about what the numbers were actually saying. That foundation still shapes how I work, but it was never the whole story.</p>
 
-          <p>I am now pursuing an MS in Business Analytics at Grand Canyon University while working at Grand Canyon Education. I look for work where messy business questions need to be turned into structured analysis and clear recommendations. Anywhere operational or financial data drives a decision is interesting to me. Spanish is my native language and English is fluent; both are useful in stakeholder and client contexts.</p>
+          <p>At FomoPlanes I worked as a business operations analyst, building Excel and Python dashboards to track revenue, attendance, and operating KPIs across more than thirty live events. The work covered variance analysis for event budgets representing over two thousand attendees, plus the daily question every operating team faces: what is happening, why, and what should we do about it. That pulled me toward analytics as a discipline that sits between finance and operations, not above either.</p>
+
+          <p>I am now pursuing an MS in Business Analytics at Grand Canyon University while working at Grand Canyon Education. I am looking for analyst work where messy business questions need to be turned into structured analysis and clear recommendations. Anywhere operational or financial data drives a decision is interesting to me. Spanish is my native language and English is fluent; both are useful in stakeholder and client contexts.</p>
         </div>
       </div>
     </section>
@@ -116,7 +119,7 @@
         <header class="section__head">
           <p class="section__eyebrow">Selected work</p>
           <h2 class="section__title">Case studies across the analytics spectrum.</h2>
-          <p class="section__lead">A small set of projects, with more on the way. Each is built end to end: define the problem, build the analysis, write the recommendation.</p>
+          <p class="section__lead">A small set of projects, with more on the way. Each is built end to end: define the question, build the analysis, write the recommendation.</p>
         </header>
 
         <div class="work-grid">
@@ -146,6 +149,31 @@
             </div>
           </article>
 
+          <!-- Project Anchor card -->
+          <article class="card" aria-labelledby="anchor-title">
+            <a class="card__media" href="#anchor" data-case-trigger="anchor" aria-label="Open Project Anchor case study">
+              <svg class="card__art" viewBox="0 0 320 200" role="img" aria-label="Churn risk by segment preview">
+                <rect width="320" height="200" fill="#f3efe7"/>
+                <line x1="30" y1="170" x2="300" y2="170" stroke="#cdc5b6" stroke-width="1"/>
+                <line x1="30" y1="92" x2="300" y2="92" stroke="#a55a3c" stroke-width="1" stroke-dasharray="3 3"/>
+                <rect x="44"  y="40"  width="34" height="130" fill="#a55a3c"/>
+                <rect x="98"  y="58"  width="34" height="112" fill="#b6a98a"/>
+                <rect x="152" y="78"  width="34" height="92"  fill="#b6a98a"/>
+                <rect x="206" y="138" width="34" height="32"  fill="#8b7c5e"/>
+                <rect x="260" y="160" width="34" height="10"  fill="#5e5a4a"/>
+              </svg>
+            </a>
+            <div class="card__body">
+              <p class="card__tag">Data Analysis &amp; Predictive Modeling</p>
+              <h3 class="card__title" id="anchor-title">Project Anchor</h3>
+              <p class="card__summary">A churn and retention analysis on 7,043 customers: where the losses concentrate, a model that flags who is about to leave, the reasons they go, and a focused retention program with a positive return. Every number is backed by the underlying analysis.</p>
+              <button class="card__link" type="button" data-case-trigger="anchor" aria-expanded="false" aria-controls="anchor">
+                View case study
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
           <!-- Placeholder card -->
           <article class="card card--placeholder">
             <div class="card__body card__body--center">
@@ -165,7 +193,7 @@
           <div class="case__head">
             <div>
               <p class="case__eyebrow">Case study. Valuation &amp; Corporate Finance.</p>
-              <h3 class="case__title">Project Harbor: Salesforce, HubSpot, and what to pay.</h3>
+              <h3 class="case__title">Project Harbor. Salesforce, HubSpot, and what to pay.</h3>
             </div>
             <button class="case__close" type="button" data-case-close aria-label="Close case study">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M6 18L18 6"/></svg>
@@ -182,10 +210,10 @@
           <div class="case__body">
 
             <h4>The question</h4>
-            <p>Project Harbor models a hypothetical Salesforce acquisition of HubSpot at $300 per share. The brief was to produce the kind of analysis a senior buy-side advisory team would prepare for a board: a clear recommendation supported by independent valuation methods, a synergy build, a financing structure, an EPS impact, and an honest risk register. The whole thing is a portfolio exercise, not a real transaction. Every number cited in the memo is reproducible in the accompanying Excel model.</p>
+            <p>Project Harbor models a hypothetical Salesforce acquisition of HubSpot at $300 per share. The brief was to produce the kind of analysis a senior buy-side advisory team would prepare for a board: a clear recommendation supported by independent valuation methods, a synergy build, a financing structure, an EPS impact, and an honest risk register. The whole thing is a portfolio exercise, not a real transaction. Every number cited in the 20-page memo is reproducible in the accompanying Excel model.</p>
 
             <h4>Four methods, in plain language</h4>
-            <p>Valuation triangulates four lenses. Public trading comparables benchmark HubSpot against twelve peer SaaS companies on revenue multiples adjusted for growth. Precedent transactions pull seven completed software acquisitions between 2019 and 2025 and run a regression of multiple against target growth rate. The discounted cash flow projects eight years of free cash flow at a 10 percent WACC and a 4 percent terminal growth rate, treating stock-based compensation as a real cash cost rather than an add-back. A paid premiums analysis that checks the offer against historical premia in comparable deals. Each method has limitations, which is why all four matter.</p>
+            <p>Valuation triangulates four lenses. Public trading comparables benchmark HubSpot against twelve peer SaaS companies on revenue multiples adjusted for growth. Precedent transactions pull seven completed software acquisitions between 2019 and 2025 and run a regression of multiple against target growth rate. The discounted cash flow projects eight years of free cash flow at a 10 percent WACC and a 4 percent terminal growth rate, treating stock-based compensation as a real cash cost rather than an add-back. A premiums-paid analysis cross-checks the offer against historical premia in comparable deals. Each method has limitations, which is why all four matter.</p>
 
             <!-- Football field -->
             <figure class="case__figure">
@@ -225,13 +253,13 @@
                 <text class="ff-val" x="244" y="63" text-anchor="end">$159</text>
                 <text class="ff-val" x="385" y="63">$317</text>
 
-                <text class="ff-label" x="190" y="115" text-anchor="end">Companies (4.0&times;–6.0&times;)</text>
+                <text class="ff-label" x="190" y="115" text-anchor="end">Comparable companies (4.0&times;–6.0&times;)</text>
                 <rect class="ff-bar-b" x="383" y="103" width="118" height="20" rx="2"/>
                 <line class="ff-mid" x1="442" y1="101" x2="442" y2="125"/>
                 <text class="ff-val" x="378" y="118" text-anchor="end">$320</text>
                 <text class="ff-val" x="506" y="118">$462</text>
 
-                <text class="ff-label" x="190" y="170" text-anchor="end">  Transactions (5.0&times;–9.0&times;)</text>
+                <text class="ff-label" x="190" y="170" text-anchor="end">Precedent transactions (5.0&times;–9.0&times;)</text>
                 <rect class="ff-bar-c" x="441" y="158" width="236" height="20" rx="2"/>
                 <line class="ff-mid" x1="559" y1="156" x2="559" y2="180"/>
                 <text class="ff-val" x="436" y="173" text-anchor="end">$390</text>
@@ -249,7 +277,7 @@
             </figure>
 
             <h4>The recommendation</h4>
-            <p>The model lands at $300 per share, paid 70 percent cash and 30 percent stock, valuing HubSpot at $15.7 billion. The price sits below the DCF fair value of $322, below the comparable company range of $320 to $462, and well below the $633 per share implied by the precedent transaction regression at HubSpot's growth rate. Year-three synergies of $1.44 billion produce roughly $10 billion in net value creation after the premium paid, with one-time integration costs and a year of EPS dilution before accretion arrives in year two.</p>
+            <p>The model lands at $300 per share, paid 70 percent cash and 30 percent stock, valuing HubSpot at $15.7 billion. The price sits below the DCF fair value of $322, below the comparable-company range of $320 to $462, and well below the $633 per share implied by the precedent-transaction regression at HubSpot's growth rate. Year-three synergies of $1.44 billion produce roughly $10 billion in net value creation after the premium paid, with one-time integration costs and a year of EPS dilution before accretion arrives in year two.</p>
 
             <figure class="case__figure">
               <figcaption>DCF sensitivity. Implied $/share by WACC and terminal growth.</figcaption>
@@ -299,13 +327,258 @@
               </div>
             </figure>
 
+            <h4>What this project demonstrates</h4>
+            <p>Project Harbor is one demonstration of analytical capability, not the defining one. It shows modeling discipline through a fully linked Excel that reproduces every figure cited in the memo, including the sensitivity grid and synergy build. It shows written communication through a 20-page document that explains every finance term inline, footnotes its sources, and stays readable for someone who is not an analyst. And it shows end-to-end analytical work: defining the question, building the structure, defending the numbers, and writing the recommendation for a busy reader. The same approach scales to operations dashboards, BI reporting, and any domain where data needs to drive a decision.</p>
+
             <div class="case__downloads">
-              <a class="btn btn--primary" href="Project Harbor Official Memo.pdf" download>
+              <a class="btn btn--primary" href="assets/Project_Harbor_Memo.pdf" download>
                 Download memo (PDF)
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
               </a>
-              <a class="btn btn--ghost" href="Project_Harbor_Model.xlsx" download>
+              <a class="btn btn--ghost" href="assets/Project_Harbor_Model.xlsx" download>
                 Download model (XLSX)
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="case" id="anchor" hidden>
+
+          <div class="case__head">
+            <div>
+              <p class="case__eyebrow">Case study. Data Analysis &amp; Predictive Modeling.</p>
+              <h3 class="case__title">Project Anchor: who is about to churn, why, and what it is worth to stop them.</h3>
+            </div>
+            <button class="case__close" type="button" data-case-close aria-label="Close case study">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M6 18L18 6"/></svg>
+            </button>
+          </div>
+
+          <dl class="case__stats">
+            <div><dt>Overall churn</dt><dd>28.5%</dd></div>
+            <div><dt>At-risk customers caught</dt><dd>78%</dd></div>
+            <div><dt>Targeting efficiency</dt><dd>2.3&times;</dd></div>
+            <div><dt>Net retention value</dt><dd>+$35K</dd></div>
+          </dl>
+
+          <div class="case__body">
+
+            <h4>The question</h4>
+            <p>Every subscription business loses customers, but spending money to keep them only pays off if you can answer three questions. How many are we losing? Which customers are about to leave, and why? And what is the return on stepping in? Project Anchor answers all three for a base of 7,043 customers. It finds where the losses concentrate, ranks which customers are most likely to leave, explains what is pushing them out, and puts a dollar figure on a focused retention program. Like the other studies here, it is a worked example built on a realistic, reproducible dataset modeled on a standard telecom customer file, so every number on this page is backed by the underlying analysis. The same approach runs without change on a company's real customer data.</p>
+
+            <h4>Where the churn concentrates</h4>
+            <p>Before any modeling, the customer segments already tell most of the story. Churn is overwhelmingly a new-customer, flexible-contract problem. A month-to-month customer leaves at 43.6 percent, while a two-year-contract customer leaves at just 3.0 percent. Anyone in their first year leaves at 51.5 percent, dropping to 5.5 percent after four years. Fiber-optic service and paying by electronic check both sit well above the 28.5 percent company-wide rate. In the chart, the dashed line is that company average, and the bars reaching past it are the pockets where retention money should go.</p>
+
+            <figure class="case__figure">
+              <figcaption>Churn rate by segment, against the 28.5% overall baseline.</figcaption>
+              <svg class="case__chart" viewBox="0 0 720 330" role="img" aria-label="Horizontal bar chart of churn rate by segment. First-year tenure 51.5 percent, month-to-month 43.6, fiber optic 37.7, electronic check 35.0, overall baseline 28.5, one-year contract 16.8, tenure over 49 months 5.5, two-year contract 3.0 percent.">
+                <defs>
+                  <style>
+                    .bx-tick { fill:#6b6b66; font:500 11px 'Inter',sans-serif; }
+                    .bx-lab  { fill:#1a1a1a; font:500 12px 'Inter',sans-serif; }
+                    .bx-val  { fill:#1a1a1a; font:600 11px 'Inter',sans-serif; }
+                    .bx-hi   { fill:#a55a3c; }
+                    .bx-lo   { fill:#b6a98a; }
+                    .bx-base { fill:#5e5a4a; }
+                    .bx-axis { stroke:#cdc5b6; stroke-width:1; }
+                    .bx-blin { stroke:#a55a3c; stroke-width:1.5; stroke-dasharray:4 4; }
+                  </style>
+                </defs>
+                <!-- x ticks 0..50 -->
+                <g>
+                  <line class="bx-axis" x1="220" y1="288" x2="700" y2="288"/>
+                  <line class="bx-axis" x1="220" y1="40" x2="220" y2="288"/>
+                  <text class="bx-tick" x="220" y="304" text-anchor="middle">0%</text>
+                  <text class="bx-tick" x="307" y="304" text-anchor="middle">10%</text>
+                  <text class="bx-tick" x="395" y="304" text-anchor="middle">20%</text>
+                  <text class="bx-tick" x="482" y="304" text-anchor="middle">30%</text>
+                  <text class="bx-tick" x="569" y="304" text-anchor="middle">40%</text>
+                  <text class="bx-tick" x="656" y="304" text-anchor="middle">50%</text>
+                </g>
+                <!-- baseline -->
+                <line class="bx-blin" x1="469" y1="34" x2="469" y2="288"/>
+                <text class="bx-tick" x="469" y="28" text-anchor="middle" fill="#a55a3c">28.5% baseline</text>
+
+                <!-- bars (y step 30, height 18) -->
+                <text class="bx-lab" x="210" y="55" text-anchor="end">First year</text>
+                <rect class="bx-hi" x="220" y="44" width="449" height="18" rx="2"/><text class="bx-val" x="675" y="58">51.5%</text>
+                <text class="bx-lab" x="210" y="85" text-anchor="end">Month-to-month</text>
+                <rect class="bx-hi" x="220" y="74" width="381" height="18" rx="2"/><text class="bx-val" x="607" y="88">43.6%</text>
+                <text class="bx-lab" x="210" y="115" text-anchor="end">Fiber optic</text>
+                <rect class="bx-hi" x="220" y="104" width="329" height="18" rx="2"/><text class="bx-val" x="555" y="118">37.7%</text>
+                <text class="bx-lab" x="210" y="145" text-anchor="end">Electronic check</text>
+                <rect class="bx-hi" x="220" y="134" width="305" height="18" rx="2"/><text class="bx-val" x="531" y="148">35.0%</text>
+                <text class="bx-lab" x="210" y="175" text-anchor="end">All customers</text>
+                <rect class="bx-base" x="220" y="164" width="249" height="18" rx="2"/><text class="bx-val" x="475" y="178">28.5%</text>
+                <text class="bx-lab" x="210" y="205" text-anchor="end">One-year contract</text>
+                <rect class="bx-lo" x="220" y="194" width="147" height="18" rx="2"/><text class="bx-val" x="373" y="208">16.8%</text>
+                <text class="bx-lab" x="210" y="235" text-anchor="end">After 4 years</text>
+                <rect class="bx-lo" x="220" y="224" width="48" height="18" rx="2"/><text class="bx-val" x="274" y="238">5.5%</text>
+                <text class="bx-lab" x="210" y="265" text-anchor="end">Two-year contract</text>
+                <rect class="bx-lo" x="220" y="254" width="26" height="18" rx="2"/><text class="bx-val" x="252" y="268">3.0%</text>
+              </svg>
+            </figure>
+
+            <h4>Predicting who will leave</h4>
+            <p>The next step ranks every customer by how likely they are to leave. I compared two prediction models: a simple, explainable one and a more powerful pattern-finder. The number that matters here is not overall accuracy. A lazy model that simply assumes nobody leaves still looks 71 percent accurate, and is useless. What counts is how many of the customers who actually leave the model manages to flag, because a missed customer is lost revenue, while a false alarm costs only one retention offer. The explainable model flags 78 percent of the customers who go on to leave. The more powerful model is choosier but lets more than half of them slip through, so the explainable model wins for this job, and it has the bonus of showing its reasoning.</p>
+
+            <figure class="case__figure">
+              <figcaption>How the two models compared, tested on 1,761 customers held back from training.</figcaption>
+              <div class="su-wrap">
+                <table class="su">
+                  <thead>
+                    <tr><th scope="col">What it measures</th><th scope="col">Explainable model</th><th scope="col">Pattern-finder model</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Predictions correct overall</td><td>71%</td><td>77%</td></tr>
+                    <tr><td>Share of leavers it catches</td><td>78%</td><td>48%</td></tr>
+                    <tr><td>Of those it flags, share who really leave</td><td>50%</td><td>63%</td></tr>
+                    <tr class="su__total"><th scope="row">Overall ranking quality</th><td>0.81</td><td>0.81</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </figure>
+
+            <p>The grid below makes the trade-off concrete. Of the 502 customers who actually left, the chosen model correctly flagged 390 and missed 112. The 392 false alarms are the price of that reach, and at $120 an offer they cost far less than the revenue lost when a real leaver goes unnoticed.</p>
+
+            <figure class="case__figure">
+              <figcaption>How the chosen model's predictions broke down.</figcaption>
+              <svg class="case__chart" viewBox="0 0 520 250" role="img" aria-label="Confusion matrix. Of customers who churned, 390 were correctly flagged and 112 missed. Of customers who stayed, 867 correct and 392 false alarms.">
+                <defs><style>
+                  .cm-h  { fill:#6b6b66; font:600 11px 'Inter',sans-serif; }
+                  .cm-n  { font:700 22px 'Inter',sans-serif; }
+                  .cm-s  { font:500 10px 'Inter',sans-serif; }
+                </style></defs>
+                <text class="cm-h" x="270" y="24" text-anchor="middle">Predicted</text>
+                <text class="cm-h" x="180" y="48" text-anchor="middle">Stay</text>
+                <text class="cm-h" x="360" y="48" text-anchor="middle">Churn</text>
+                <text class="cm-h" x="40" y="110" text-anchor="middle" transform="rotate(-90 40 130)">Actual</text>
+                <text class="cm-h" x="78" y="100" text-anchor="end">Stayed</text>
+                <text class="cm-h" x="78" y="185" text-anchor="end">Churned</text>
+                <!-- cells -->
+                <rect x="90" y="60" width="180" height="80" fill="#efe8da" stroke="#cdc5b6"/>
+                <text class="cm-n" x="180" y="100" text-anchor="middle" fill="#5e5a4a">867</text>
+                <text class="cm-s" x="180" y="120" text-anchor="middle" fill="#6b6b66">kept, correct</text>
+                <rect x="270" y="60" width="180" height="80" fill="#f3efe7" stroke="#cdc5b6"/>
+                <text class="cm-n" x="360" y="100" text-anchor="middle" fill="#a55a3c">392</text>
+                <text class="cm-s" x="360" y="120" text-anchor="middle" fill="#6b6b66">false alarm</text>
+                <rect x="90" y="140" width="180" height="80" fill="#f3efe7" stroke="#cdc5b6"/>
+                <text class="cm-n" x="180" y="180" text-anchor="middle" fill="#a55a3c">112</text>
+                <text class="cm-s" x="180" y="200" text-anchor="middle" fill="#6b6b66">missed leaver</text>
+                <rect x="270" y="140" width="180" height="80" fill="#e7d8cb" stroke="#cdc5b6"/>
+                <text class="cm-n" x="360" y="180" text-anchor="middle" fill="#a55a3c">390</text>
+                <text class="cm-s" x="360" y="200" text-anchor="middle" fill="#6b6b66">caught (78%)</text>
+              </svg>
+            </figure>
+
+            <h4>Why they leave</h4>
+            <p>The model also shows what pushes customers out the door, measured as how much each factor raises or lowers the odds of leaving. Fiber-optic service multiplies the odds of leaving by about 2.5 times, and paying by electronic check by about 1.9 times. Working the other way, a two-year contract cuts the odds by more than 90 percent, and adding tech support or online security cuts them by roughly 40 percent each. The point is practical, not academic: contracts, payment methods, and service bundles are all things a business can actually change.</p>
+
+            <figure class="case__figure">
+              <figcaption>What raises and lowers the odds of leaving. Bars to the right increase risk; bars to the left reduce it.</figcaption>
+              <svg class="case__chart" viewBox="0 0 700 300" role="img" aria-label="Churn odds multipliers. Fiber optic 2.54 times, electronic check 1.91, paperless billing 1.42 raise churn. Online security 0.58, tech support 0.59, one-year contract 0.40 and two-year contract 0.09 lower it.">
+                <defs><style>
+                  .od-lab { fill:#1a1a1a; font:500 12px 'Inter',sans-serif; }
+                  .od-val { fill:#1a1a1a; font:600 11px 'Inter',sans-serif; }
+                  .od-up  { fill:#a55a3c; }
+                  .od-dn  { fill:#b6a98a; }
+                  .od-ref { stroke:#5e5a4a; stroke-width:1.5; }
+                  .od-tick{ fill:#6b6b66; font:500 10px 'Inter',sans-serif; }
+                </style></defs>
+                <!-- reference line at odds = 1.0, cx=380 -->
+                <line class="od-ref" x1="380" y1="36" x2="380" y2="262"/>
+                <text class="od-tick" x="380" y="282" text-anchor="middle">1.0× (no effect)</text>
+                <text class="od-tick" x="540" y="282" text-anchor="middle">raises churn →</text>
+                <text class="od-tick" x="230" y="282" text-anchor="middle">← lowers churn</text>
+
+                <!-- up drivers (bar from 380 to the right) -->
+                <text class="od-lab" x="168" y="56" text-anchor="end">Fiber optic</text>
+                <rect class="od-up" x="380" y="45" width="84" height="16" rx="2"/><text class="od-val" x="470" y="58">2.54×</text>
+                <text class="od-lab" x="168" y="84" text-anchor="end">Electronic check</text>
+                <rect class="od-up" x="380" y="73" width="58" height="16" rx="2"/><text class="od-val" x="444" y="86">1.91×</text>
+                <text class="od-lab" x="168" y="112" text-anchor="end">Paperless billing</text>
+                <rect class="od-up" x="380" y="101" width="32" height="16" rx="2"/><text class="od-val" x="418" y="114">1.42×</text>
+
+                <!-- down drivers (bar from value-x to 380) -->
+                <text class="od-lab" x="168" y="140" text-anchor="end">Online security</text>
+                <rect class="od-dn" x="331" y="129" width="49" height="16" rx="2"/><text class="od-val" x="325" y="142" text-anchor="end">0.58×</text>
+                <text class="od-lab" x="168" y="168" text-anchor="end">Tech support</text>
+                <rect class="od-dn" x="332" y="157" width="48" height="16" rx="2"/><text class="od-val" x="326" y="170" text-anchor="end">0.59×</text>
+                <text class="od-lab" x="168" y="196" text-anchor="end">One-year contract</text>
+                <rect class="od-dn" x="298" y="185" width="82" height="16" rx="2"/><text class="od-val" x="292" y="198" text-anchor="end">0.40×</text>
+                <text class="od-lab" x="168" y="224" text-anchor="end">Two-year contract</text>
+                <rect class="od-dn" x="216" y="213" width="164" height="16" rx="2"/><text class="od-val" x="210" y="226" text-anchor="end">0.09×</text>
+              </svg>
+            </figure>
+
+            <h4>The payoff: focused retention</h4>
+            <p>A model is only worth something if it changes the budget. By ranking customers from most to least likely to leave and starting with the riskiest, the spend goes where the churn actually is. Contacting just the top 20 percent by risk reaches 46 percent of everyone who would have left, which is 2.3 times better than treating all customers the same. In the chart, the steeper the line climbs early on, the less money is wasted on customers who were never going to leave. The straight dashed line is what untargeted, random outreach would achieve.</p>
+
+            <figure class="case__figure">
+              <figcaption>Cumulative gains. Share of churners captured as more of the base is targeted by risk.</figcaption>
+              <svg class="case__chart" viewBox="0 0 720 340" role="img" aria-label="Cumulative gains curve. Targeting the top 20 percent of customers by predicted risk captures 46 percent of churners, well above the random diagonal.">
+                <defs><style>
+                  .g-axis { stroke:#cdc5b6; stroke-width:1; }
+                  .g-tick { fill:#6b6b66; font:500 10px 'Inter',sans-serif; }
+                  .g-lab  { fill:#1a1a1a; font:500 11px 'Inter',sans-serif; }
+                  .g-rand { stroke:#cdc5b6; stroke-width:1.5; stroke-dasharray:5 4; }
+                  .g-mod  { stroke:#a55a3c; stroke-width:2.5; fill:none; }
+                  .g-mk   { fill:#a55a3c; }
+                </style></defs>
+                <!-- axes -->
+                <line class="g-axis" x1="80" y1="300" x2="680" y2="300"/>
+                <line class="g-axis" x1="80" y1="40" x2="80" y2="300"/>
+                <g>
+                  <text class="g-tick" x="80"  y="316" text-anchor="middle">0%</text>
+                  <text class="g-tick" x="200" y="316" text-anchor="middle">20%</text>
+                  <text class="g-tick" x="320" y="316" text-anchor="middle">40%</text>
+                  <text class="g-tick" x="440" y="316" text-anchor="middle">60%</text>
+                  <text class="g-tick" x="560" y="316" text-anchor="middle">80%</text>
+                  <text class="g-tick" x="680" y="316" text-anchor="middle">100%</text>
+                  <text class="g-lab" x="380" y="334" text-anchor="middle">% of customers contacted (riskiest first)</text>
+                  <text class="g-tick" x="74" y="304" text-anchor="end">0%</text>
+                  <text class="g-tick" x="74" y="174" text-anchor="end">50%</text>
+                  <text class="g-tick" x="74" y="44"  text-anchor="end">100%</text>
+                  <text class="g-lab" x="28" y="170" text-anchor="middle" transform="rotate(-90 28 170)">% of leavers reached</text>
+                </g>
+                <!-- random baseline -->
+                <line class="g-rand" x1="80" y1="300" x2="680" y2="40"/>
+                <!-- model curve: real points -->
+                <polyline class="g-mod" points="80,300 140,230 200,180 260,141 320,110 380,87 440,66 500,53 560,44 620,40 680,40"/>
+                <!-- 20% highlight -->
+                <line class="g-axis" x1="200" y1="180" x2="200" y2="300" stroke-dasharray="3 3"/>
+                <circle class="g-mk" cx="200" cy="180" r="4.5"/>
+                <text class="g-lab" x="214" y="172" fill="#a55a3c">Top 20% reaches 46% of leavers (2.3× better)</text>
+              </svg>
+            </figure>
+
+            <p>Costed out across the whole base, the program clears a profit. Contact the 1,409 highest-risk customers with a $120 retention offer. On a conservative assumption that it saves 30 percent of them, that keeps about 278 customers worth roughly $734 a year each.</p>
+
+            <figure class="case__figure">
+              <figcaption>The retention program, costed across the full base of 7,043 customers.</figcaption>
+              <div class="su-wrap">
+                <table class="su">
+                  <thead>
+                    <tr><th scope="col">Driver</th><th scope="col">Value</th><th scope="col">Result</th><th scope="col">$</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Customers targeted (top 20%)</td><td>1,409</td><td>Revenue retained</td><td>$204,052</td></tr>
+                    <tr><td>Offer cost per customer</td><td>$120</td><td>Program cost</td><td>$169,080</td></tr>
+                    <tr><td>Save rate</td><td>30%</td><td>Customers saved</td><td>278</td></tr>
+                    <tr class="su__total"><th scope="row">Net value</th><td>+21% ROI</td><th scope="row">Net</th><td>+$34,972</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </figure>
+
+            <h4>Recommendation</h4>
+            <p>Retention is a targeting problem, not a blanket discount. The highest-risk customer is in their first year, on a month-to-month plan, with fiber service and electronic-check billing. The levers that work are contract incentives, moving customers off electronic check, and bundling in tech support and online security, each of which measurably lowers the odds of leaving. In practice: score the customer base regularly, send the riskiest group a costed retention offer, and require that every offer is justified by the revenue it protects. That turns churn from an unmanaged cost into a focused, profitable program, and the same approach runs unchanged on a company's real customer data.</p>
+
+            <div class="case__downloads">
+              <a class="btn btn--primary" href="anchor_churn_data.csv" download>
+                Download dataset (CSV)
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
               </a>
             </div>
@@ -324,7 +597,7 @@
       <div class="container">
         <header class="section__head">
           <p class="section__eyebrow">Experience</p>
-          <h2 class="section__title">Where I have been built.</h2>
+          <h2 class="section__title">Where I have built the muscle.</h2>
         </header>
 
         <ol class="timeline">
@@ -334,7 +607,7 @@
             <div class="timeline__body">
               <h3 class="timeline__role">Junior Qualifying Specialist</h3>
               <p class="timeline__company">Grand Canyon Education. Phoenix, AZ.</p>
-              <p class="timeline__line">Review 40+ applications daily with 100% accuracy and maintains 100+ student records across CRM systems, supporting four counselor teams on intake workflows.</p>
+              <p class="timeline__line">Reviews 40+ applications daily with 100% accuracy and maintains 100+ student records across CRM systems, supporting four counselor teams on intake workflows.</p>
             </div>
           </li>
 
@@ -446,7 +719,7 @@
               </a>
             </li>
             <li>
-              <a href="Resume_Martin_Botto.pdf" download>
+              <a href="assets/Martin_Botto_Resume.pdf" download>
                 <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
                 Resume
               </a>

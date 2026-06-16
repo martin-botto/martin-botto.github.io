@@ -75,42 +75,56 @@
     sections.forEach((s) => observer.observe(s));
   }
 
-  /* ---------- Case study expand and collapse ---------- */
-  const caseEl = $('#harbor');
+  /* ---------- Case studies expand and collapse (multiple) ---------- */
+  const getCase = (id) => (id ? document.getElementById(id) : null);
 
-  const openCase = () => {
-    if (!caseEl) return;
-    caseEl.hidden = false;
-    $$('[data-case-trigger="harbor"]').forEach((btn) => {
-      if (btn.hasAttribute('aria-expanded')) btn.setAttribute('aria-expanded', 'true');
-    });
-    requestAnimationFrame(() => {
-      caseEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const setTriggerState = (id, expanded) => {
+    $$(`[data-case-trigger="${id}"]`).forEach((btn) => {
+      if (btn.hasAttribute('aria-expanded')) {
+        btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      }
     });
   };
 
-  const closeCase = () => {
-    if (!caseEl) return;
-    caseEl.hidden = true;
-    $$('[data-case-trigger="harbor"]').forEach((btn) => {
-      if (btn.hasAttribute('aria-expanded')) btn.setAttribute('aria-expanded', 'false');
+  const closeCase = (id, scrollToWork = true) => {
+    const el = getCase(id);
+    if (!el || !el.classList.contains('case')) return;
+    el.hidden = true;
+    setTriggerState(id, false);
+    if (scrollToWork) $('#work')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const openCase = (id) => {
+    const el = getCase(id);
+    if (!el || !el.classList.contains('case')) return;
+    /* Only one case study open at a time */
+    $$('.case').forEach((c) => {
+      if (c.id !== id && !c.hidden) closeCase(c.id, false);
     });
-    const work = $('#work');
-    work?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    el.hidden = false;
+    setTriggerState(id, true);
+    requestAnimationFrame(() => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   };
 
   $$('[data-case-trigger]').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const open = caseEl && !caseEl.hidden;
-      if (open) closeCase(); else openCase();
+      const id = btn.getAttribute('data-case-trigger');
+      const el = getCase(id);
+      if (el && !el.hidden) closeCase(id);
+      else openCase(id);
     });
   });
 
   $$('[data-case-close]').forEach((btn) => {
-    btn.addEventListener('click', closeCase);
+    btn.addEventListener('click', () => {
+      const host = btn.closest('.case');
+      if (host) closeCase(host.id);
+    });
   });
 
-  /* Open the case study if the page loads with #harbor in the URL */
-  if (window.location.hash === '#harbor') openCase();
+  /* Open a case study if the page loads with its id in the URL */
+  if (window.location.hash) openCase(window.location.hash.slice(1));
 })();
